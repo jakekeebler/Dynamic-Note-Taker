@@ -14,9 +14,11 @@
   
   ## Description
   * This is a program that utilizes frontend and backend code so that the user can takes notes. All notes are saved to a .json database.
+  ![image](./readme_assets/Capture1.PNG)
+  ![image](./readme_assets/Capture2.PNG)
   
   ## Installation Instructions
-  * Be sure to have the repository cloned/downloaded on your computer. Then, open the repository in Visual Studio Code. Open your integrated terminal and install the necessary node modules by typing "npm i". To start the program, type "node server" into your terminal, then open your browser and type "http://localhost:3001" into the URL bar. Alternatively, this program is deployed through Heroku, which you can access here: https://radiant-cove-12910.herokuapp.com/
+  * Be sure to have the repository cloned/downloaded on your computer. Then, open the repository in Visual Studio Code. Open your integrated terminal and install the necessary node modules by typing "npm i". To start the program, type "node server" into your terminal, then open your browser and type "http://localhost:3001" into the URL bar. Alternatively, this program is deployed through Heroku, which you can access here: <a href="https://radiant-cove-12910.herokuapp.com/" target="_blank">HEROKU DEPLOYED APP</a>
   
   ## Usage
   * Take notes and save them for later. Even upon reloading the page, the notes will persist. You can also delete notes if they are no longer needed.
