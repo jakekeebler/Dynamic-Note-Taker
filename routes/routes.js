@@ -8,7 +8,7 @@ module.exports = app => {
         res.sendFile(path.join(__dirname, "../public/index.html"));
     });
 
-    // Notes html and it's "url"
+    // Notes html and it's url
     app.get("/notes", function (req, res) {
         res.sendFile(path.join(__dirname, "../public/notes.html"));
     })
@@ -55,13 +55,7 @@ module.exports = app => {
             res.json(newNote);
         });
 
-    // Delete a note based on an ID (cannot be location in array,
-    // the location will change if you splice things out)
-    // This route is dependent on ID of note.
-    //      1. Find note by id via a loop
-    //      2. Splice note out of array of notes.
-    //      3. Re-write db.json, just without that newly deleted note.
-
+    // Delete a note by id, then rewrite the db.json
     app.delete("/api/notes/:id", function (req, res) {
         let jsonFilePath = path.join(__dirname, "../db/db.json");
         // request to delete note by id.
